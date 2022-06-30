@@ -20,27 +20,17 @@ Description:
 License: GPL-3
 Encoding: UTF-8
 RoxygenNote: 7.2.0
-Depends: 
-    R (>= 4.2),
+Depends: R (>= 4.2),
 URL: https://github.com/jingeyu/CTSV
 BugReports: https://github.com/jingeyu/CTSV/issues
-Imports: 
-    stats, 
-    pscl, 
-    qvalue, 
-    BiocParallel,
-    methods,
-    knitr, 
-    SpatialExperiment,
-    SummarizedExperiment
-Suggests: 
-    testthat,
-    BiocStyle
-biocViews: 
-    GeneExpression, 
-    StatisticalMethod, 
-    Regression, 
-    Spatial,
-    Genetics
+Imports: stats, pscl, qvalue, BiocParallel, methods, knitr,
+        SpatialExperiment, SummarizedExperiment
+Suggests: testthat, BiocStyle
+biocViews: GeneExpression, StatisticalMethod, Regression, Spatial,
+        Genetics
 NeedsCompilation: yes
 VignetteBuilder: knitr
+Packaged: 2022-06-30 08:31:26 UTC; jinge.yu
+Author: Jinge Yu Developer [aut, cre],
+  Xiangyu Luo Developer [aut]
+Maintainer: Jinge Yu Developer <yjgruc@ruc.edu.cn>
