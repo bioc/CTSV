@@ -1,10 +1,11 @@
 \name{NEWS}
 \title{News for Package \pkg{CTSV}}
 
-\section{Changes in version 0.99.10 (2022-07-07)}{
+\section{Changes in version 0.99.11 (2022-07-07)}{
     \itemize{
        \item Corrected some typos.
        \item Added citation information.
+       \item Description revised.
     }
 }
 
