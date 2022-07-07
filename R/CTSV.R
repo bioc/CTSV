@@ -26,9 +26,9 @@
 
 #' @title Detection of cell-type-specific spatially variable genes
 #' @param spe An SpatialExperiment class.
-#' @param W An n by K cell-type proportion matrix, where K is the number of cell types. The column names of W are cell type names.
+#' @param W A n by K cell-type proportion matrix, where K is the number of cell types. The column names of W are cell type names.
 #' @param num_core Number of cores if using paralleling. The default is one.
-#' @param BPPARAM Optional additional argument for parallelization. The default is NULL, in which case \code{num_core} will be used instead. If provided, this should be an instance of \code{BiocParallelParam}. For most users, the recommended option is to use the \code{num_core} argument instead. 
+#' @param BPPARAM Optional additional argument for parallelization. The default is NULL, in which case \code{num_core} will be used. If provided, this should be an instance of \code{BiocParallelParam}. For most users, the recommended option is to use the \code{num_core} argument. 
 #' @return A list with a G by 2K matrix of p-values and a G by 2K matrix of q-values.
 #' \item{pval}{A G by 2K matrix of p-values. The first K columns correspond to the first coordinate, and the last K columns to the second coordinate.}
 #' \item{qval}{A G by 2K matrix of q-values. The first K columns correspond to the first coordinate, and the last K columns to the second coordinate.}
@@ -142,9 +142,9 @@ CTSV <- function(spe, W, num_core=1, BPPARAM = NULL){
 #' @title Report spatially variable genes
 #' @param Q_val A G by 2K q-value matrix, where G is the number of genes and K is the number of cell types.
 #' @param thre.alpha numeric, a q-value threshold to control FDR less than thre.alpha.
-#' @return A list with a G by 2K 0-1 matrix and a list with names of SV genes in each cell type. The first K columns of the 0-1 matrix correspond to the coordinate of \eqn{S_1}, and the last K columns to the coordinate of \eqn{S_2}.
+#' @return A list with a G by 2K 0-1 matrix and a list with names of SV gene names in each cell type. The first K columns of the 0-1 matrix correspond to the coordinate of \eqn{S_1}, and the last K columns to the coordinate of \eqn{S_2}.
 #' \item{SV}{A G by 2K 0-1 matrix. The first K columns correspond to the coordinate of \eqn{S_1}, the last K columns to the coordinate of \eqn{S_2}.}
-#' \item{SVGene}{A list with names of SV genes in each cell type.}
+#' \item{SVGene}{A list with SV gene names in each cell type.}
 #' @examples 
 #' library(CTSV)
 #' # Simulate a Q value matrix

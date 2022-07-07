@@ -12,9 +12,9 @@ svGene(Q_val, thre.alpha = 0.05)
 \item{thre.alpha}{numeric, a q-value threshold to control FDR less than thre.alpha.}
 }
 \value{
-A list with a G by 2K 0-1 matrix and a list with names of SV genes in each cell type. The first K columns of the 0-1 matrix correspond to the coordinate of \eqn{S_1}, and the last K columns to the coordinate of \eqn{S_2}.
+A list with a G by 2K 0-1 matrix and a list with names of SV gene names in each cell type. The first K columns of the 0-1 matrix correspond to the coordinate of \eqn{S_1}, and the last K columns to the coordinate of \eqn{S_2}.
 \item{SV}{A G by 2K 0-1 matrix. The first K columns correspond to the coordinate of \eqn{S_1}, the last K columns to the coordinate of \eqn{S_2}.}
-\item{SVGene}{A list with names of SV genes in each cell type.}
+\item{SVGene}{A list with SV gene names in each cell type.}
 }
 \description{
 Report spatially variable genes

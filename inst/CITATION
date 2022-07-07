@@ -1,0 +1,13 @@
+citEntry(
+
+    entry ="article",
+     author = c(person("Jinge", "Yu"),
+	person("Xiangyu", "Luo")),
+    title = "Identification of Cell-Type-Specific Spatially Variable Genes Accounting for Excess Zeros",
+    journal = "Bioinformatics",
+    year = "2022", 
+    doi = "btac457", 
+    url = "https://doi.org/10.1093/bioinformatics/btac457",
+
+    textVersion = "Jinge Yu, Xiangyu Luo, Identification of Cell-Type-Specific Spatially Variable Genes Accounting for Excess Zeros, Bioinformatics, 2022;, btac457, https://doi.org/10.1093/bioinformatics/btac457"
+ )

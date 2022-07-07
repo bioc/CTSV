@@ -9,11 +9,11 @@ CTSV(spe, W, num_core = 1, BPPARAM = NULL)
 \arguments{
 \item{spe}{An SpatialExperiment class.}
 
-\item{W}{An n by K cell-type proportion matrix, where K is the number of cell types. The column names of W are cell type names.}
+\item{W}{A n by K cell-type proportion matrix, where K is the number of cell types. The column names of W are cell type names.}
 
 \item{num_core}{Number of cores if using paralleling. The default is one.}
 
-\item{BPPARAM}{Optional additional argument for parallelization. The default is NULL, in which case \code{num_core} will be used instead. If provided, this should be an instance of \code{BiocParallelParam}. For most users, the recommended option is to use the \code{num_core} argument instead.}
+\item{BPPARAM}{Optional additional argument for parallelization. The default is NULL, in which case \code{num_core} will be used. If provided, this should be an instance of \code{BiocParallelParam}. For most users, the recommended option is to use the \code{num_core} argument.}
 }
 \value{
 A list with a G by 2K matrix of p-values and a G by 2K matrix of q-values.

@@ -9,9 +9,9 @@ A simulated data set
 
 \description{A simulated data set for demonstrating how to use the ctsv function.
 \describe{
-  \item{gamma_true}{An 20 by 2 0-1 matrix, indicator of SV genes.}
+  \item{gamma_true}{A 20 by 2 0-1 matrix, indicator of SV genes.}
   \item{spe}{A SpatialExperiment class.}
-  \item{W}{An 100 by 2 cell-type proportion matrix.}
+  \item{W}{A 100 by 2 cell-type proportion matrix.}
 }
 }
 
