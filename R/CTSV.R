@@ -142,7 +142,7 @@ CTSV <- function(spe, W, num_core=1, BPPARAM = NULL){
 #' @title Report spatially variable genes
 #' @param Q_val A G by 2K q-value matrix, where G is the number of genes and K is the number of cell types.
 #' @param thre.alpha numeric, a q-value threshold to control FDR less than thre.alpha.
-#' @return A list with a G by 2K 0-1 matrix and a list with names of SV gene names in each cell type. The first K columns of the 0-1 matrix correspond to the coordinate of \eqn{S_1}, and the last K columns to the coordinate of \eqn{S_2}.
+#' @return A list with a G by 2K 0-1 matrix and a list with SV gene names in each cell type. The first K columns of the 0-1 matrix correspond to the coordinate of \eqn{S_1}, and the last K columns to the coordinate of \eqn{S_2}.
 #' \item{SV}{A G by 2K 0-1 matrix. The first K columns correspond to the coordinate of \eqn{S_1}, the last K columns to the coordinate of \eqn{S_2}.}
 #' \item{SVGene}{A list with SV gene names in each cell type.}
 #' @examples 
