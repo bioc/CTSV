@@ -7,7 +7,7 @@
 CTSV(spe, W, num_core = 1, BPPARAM = NULL)
 }
 \arguments{
-\item{spe}{An SpatialExperiment class.}
+\item{spe}{A SpatialExperiment class.}
 
 \item{W}{A n by K cell-type proportion matrix, where K is the number of cell types. The column names of W are cell type names.}
 

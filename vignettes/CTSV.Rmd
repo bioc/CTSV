@@ -110,7 +110,7 @@ The results of CTSV are located in a list.
 head(result$qval)
 ```
 
-Then we want to extra SV genes with an FDR level at 0.05 using `SVGene` function. We use the q-value matrix returned by `CTSVPval` and a threshold of 0.05 as input. The output of the `SVGene` is a list containing two elements, the first of which is a $G\times 2K$ 0-1 matrix indicating SV genes in each cell type and axis, denoted as `SV`. And the second element is a list with names of SV gens in each cell type, denoted as `svGene`.
+Then we want to extra SV genes with an FDR level at 0.05 using `svGene` function. We use the q-value matrix `qval` returned by the `CTSV` function and a threshold of 0.05 as input. The output of the `svGene` is a list containing two elements, the first of which is a $G\times 2K$ 0-1 matrix indicating SV genes in each cell type and axis, denoted as `SV`. The second element is a list with names of SV genes in each cell type, denoted as `SVGene`.
 
 ```{r SVgenes}
 re <- svGene(result$qval,0.05)

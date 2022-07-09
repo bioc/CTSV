@@ -25,7 +25,7 @@
 ################################################################
 
 #' @title Detection of cell-type-specific spatially variable genes
-#' @param spe An SpatialExperiment class.
+#' @param spe A SpatialExperiment class.
 #' @param W A n by K cell-type proportion matrix, where K is the number of cell types. The column names of W are cell type names.
 #' @param num_core Number of cores if using paralleling. The default is one.
 #' @param BPPARAM Optional additional argument for parallelization. The default is NULL, in which case \code{num_core} will be used. If provided, this should be an instance of \code{BiocParallelParam}. For most users, the recommended option is to use the \code{num_core} argument. 
